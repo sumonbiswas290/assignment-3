@@ -92,11 +92,11 @@
         <div class="flex flex-col items-center lg:items-start">
           <a class="bg-stone-100 rounded-full w-32 p-0.5" href=""><i class="text-lg  rotate-90 fa-solid fa-arrow-up-long items-center mx-3"></i>About Us</a>
           <h3 class="mt-4 text-2xl md:text-3xl lg:text-4xl font-black text-center lg:text-left">We design thoughtful, liveable spaces</h3>
-          <p class="mt-6 text-center lg:text-left">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+          <p class= text-center lg:text-left">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
           </p>
           <div class="flex lg:flex-col md:flex-row md:gap-6 flex-col">
             <section>
-              <div class="bg-stone-100 mt-6 p-6 rounded-2xl flex">
+              <div class="bg-stone-100 p-6 rounded-2xl flex">
                 <img class="mr-6 w-[10vw] h-[10vw] md:w-[7vw] md:h-[7vw]" src="./images/commercial.png" alt="">
                 <div>
                   <h5 class="font-bold text-xl">Commercial
@@ -106,7 +106,7 @@
               </div>
             </section>
             <section>
-              <div class="bg-stone-100 mt-6 p-6 rounded-2xl flex">
+              <div class="bg-stone-100 p-6 rounded-2xl flex">
                 <img class="mr-6 md:w-[7vw] md:h-[7vw] w-[10vw] h-[10vw]" src="./images/residential.png" alt="">
                 <div>
                   <h5 class="font-bold text-xl">Residential
@@ -157,35 +157,56 @@
     </div>
 
     <!-- Our latest portfolio -->
-     <div class="flex flex-col items-center py-24 bg-stone-100">
+     <div class="flex flex-col items-center py-24 lg:bg-stone-100">
       <a class="bg-lime-200 rounded-full pl-2 pr-4 py-2" href=""><i class="text-lg  rotate-90 fa-solid fa-arrow-up-long items-center mx-3"></i>Explore our Latest works</a>
         <h3 class="mt-4 text-2xl md:text-3xl lg:text-4xl font-black text-center lg:text-left">Our Latest Portfolio</h3>
           <p class="my-6 text-center md:w-[670px]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
           </p>
-          <div class="lg:px-12 px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-10 md:mb-20 lg:mb-28">
-            <section class="bg-pink-300 mt-6 p-6 rounded-2xl flex flex-col">
-                <img class="h-12 w-12" src="./images/concept.png" alt="">                
-                <h5 class="font-bold text-xl">Concept
-                </h5>
-                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+          <div class="lg:px-12 px-5 grid grid-rows-8 md:grid-rows-4 lg:grid-rows-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-6">
+
+            <!-- 1 -->
+            <section class="bg-stone-100 border border-solid border-slate-300 p-6 rounded-2xl flex flex-col md:flex-row row-span-2 md:row-span-1 md:col-span-2 lg:col-span-8">
+                <img class="max-h-44" src="./images/img1.png" alt="">
+                <div class="flex flex-col">
+                  <h5 class="font-bold text-xl">Budget Planning
+                  </h5>
+                  <p class="max-w-[435]">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
             </section>
-            <section class="bg-yellow-300 mt-6 p-6 rounded-2xl flex flex-col">
-                <img class="h-12 w-12" src="./images/flow-chart.png" alt="">                
-                <h5 class="font-bold text-xl">Design Process
-                </h5>
-                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+
+            <!-- 2 -->
+            <section class="bg-stone-100 border border-solid border-slate-300 p-6 rounded-2xl flex flex-col md:flex-row lg:col-span-4">
+                <img class="max-h-44" src="./images/img2.png" alt="">
             </section>
-            <section class="bg-emerald-300 mt-6 p-6 rounded-2xl flex flex-col">
-                <img class="h-12 w-12" src="./images/vision.png" alt="">                
-                <h5 class="font-bold text-xl">Supervision
-                </h5>
-                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+
+            <!-- 5L -->
+            <section class="bg-stone-100 border border-solid border-slate-300 p-6 rounded-2xl flex flex-col md:flex-row lg:hidden">
+                <img class="max-h-44" src="./images/img5.png" alt="">
             </section>
-            <section class="bg-cyan-300 mt-6 p-6 rounded-2xl flex flex-col">
-                <img class="h-12 w-12" src="./images/budget-planning.png" alt="">                
-                <h5 class="font-bold text-xl">Budget Planning
-                </h5>
-                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+
+            <!-- 3SM -->
+            <section class="bg-stone-100 border border-solid border-slate-300 p-6 rounded-2xl md:flex-row row-span-2 md:row-span-1 md:col-span-2 lg:col-span-3 hidden lg:inline">
+                <img class="max-h-44" src="./images/img3.png" alt="">
+            </section>
+
+            <!-- 4 -->
+            <section class="bg-stone-100 border border-solid border-slate-300 p-6 rounded-2xl flex flex-col md:flex-row lg:col-span-6">
+                <img class="max-h-44" src="./images/img4.png" alt="">
+                <div class="lg:flex lg:flex-col hidden">
+                  <h5 class="font-bold text-xl">Budget Planning
+                  </h5>
+                  <p class="max-w-[435]">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>                
+            </section>
+
+            <!-- 3L -->
+            <section class="bg-stone-100 border border-solid border-slate-300 p-6 rounded-2xl flex flex-col md:flex-row row-span-2 md:row-span-1 md:col-span-2 lg:col-span-3 lg:hidden">
+              <img class="max-h-44" src="./images/img3.png" alt="">
+          </section>
+
+          <!-- 5 -->
+            <section class="bg-stone-100 border border-solid border-slate-300 p-6 rounded-2xl flex flex-col md:flex-row lg:col-span-3">
+                <img class="max-h-44" src="./images/img5.png" alt="">
             </section>
           </div>
      </div>
